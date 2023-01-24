@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo cp -f Boot2Repo.service /etc/systemd/system
-mkdir /home/Boot2Repo
+sudo mkdir /home/Boot2Repo
 sudo cp -f GetRepo.sh /home/Boot2Repo
 
 sudo systemctl enable Boot2Repo
