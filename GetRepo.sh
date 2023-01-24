@@ -25,12 +25,16 @@ then
 
 cd "$repoName"
 
+echo $(pwd)
+
 git pull --no-rebase
 
 else
 
 mkdir "$repoName"
 cd "$repoName"
+
+echo $(pwd)
 
 git clone "$repoAddress"
 
