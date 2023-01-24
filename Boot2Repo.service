@@ -3,7 +3,7 @@ Description=Loads up a github repo on boot and launches the main.py file.
 After=network.target
 
 [Service]
-ExecStart=/home/GetRepo.sh
+ExecStart=/home/Boot2Repo/GetRepo.sh
 Restart=on-failure
 
 [Install]
