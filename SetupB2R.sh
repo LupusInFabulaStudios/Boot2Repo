@@ -1,7 +1,8 @@
 #!/bin/bash
 
 sudo cp -f Boot2Repo.service /etc/systemd/system
-sudo cp -f GetRepo.sh /home
+mkdir /home/Boot2Repo
+sudo cp -f GetRepo.sh /home/Boot2Repo
 
 sudo systemctl enable Boot2Repo
 sudo systemctl daemon-reload
