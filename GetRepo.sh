@@ -18,7 +18,7 @@ exit 1
 
 fi
 
-cd
+cd /home
 
 if [ -d "$repoName" ]
 then
