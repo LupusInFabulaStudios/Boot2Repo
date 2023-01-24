@@ -43,4 +43,4 @@ fi
 pipreqs $(pwd) --force
 pip3 install -r "requirements.txt"
 
-python3 main.py
+sudo python3 main.py
