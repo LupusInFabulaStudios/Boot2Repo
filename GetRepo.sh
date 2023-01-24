@@ -25,7 +25,7 @@ then
 
 cd "$repoName"
 
-echo $(pwd)
+cd $(ls | head -n 1)
 
 git pull --no-rebase
 
@@ -34,15 +34,12 @@ else
 mkdir "$repoName"
 cd "$repoName"
 
-echo $(pwd)
-
 git clone "$repoAddress"
-
-fi
 
 cd $(ls | head -n 1)
 
-echo $(pwd)
+fi
+
 pipreqs $(pwd) --force
 pip3 install -r "requirements.txt"
 
