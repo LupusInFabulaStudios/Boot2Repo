@@ -18,7 +18,7 @@ exit 1
 
 fi
 
-cd /home
+cd /home/Boot2Repo
 
 if [ -d "$repoName" ]
 then
