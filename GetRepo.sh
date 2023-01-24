@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/sudo bash
 
 pip3 install pipreqs
 
@@ -43,7 +43,7 @@ fi
 cd $(ls | head -n 1)
 
 echo $(pwd)
-sudo pipreqs $(pwd) --force
+pipreqs $(pwd) --force
 pip3 install -r "requirements.txt"
 
 python3 main.py
