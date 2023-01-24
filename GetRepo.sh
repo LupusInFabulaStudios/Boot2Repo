@@ -38,7 +38,7 @@ fi
 
 cd $(ls | head -n 1)
 
-pipreqs $PWD --force
+sudo pipreqs $PWD --force
 pip3 install -r "requirements.txt"
 
 python3 main.py
